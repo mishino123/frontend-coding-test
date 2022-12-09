@@ -1,0 +1,101 @@
+@use "variables" as v;
+@use "mixin" as m;
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid v.$gris_claro;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  background-color: v.$negro;
+  border-radius: 20px;
+  align-items: center;
+  &__name {
+    font-size: 2rem;
+    color: v.$secundario;
+    margin: 10px;
+    &__text {
+      color: v.$blanco;
+    }
+  }
+
+  &__parrafo {
+    font-size: 2rem;
+    margin: 10px;
+    color: v.$secundario;
+
+    &__text {
+      color: v.$negro;
+    }
+  }
+
+  .__img {
+    max-width: 100%;
+  
+    border-radius: 5px;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid v.$gris_claro;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  background-color: v.$negro;
+  border-radius: 20px;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    color: red;
+    h2 {
+      font-size: 4rem;
+      color: v.$principal;
+      padding-right: 2rem;
+    }
+  }
+  &__image {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    margin: 5px;
+    @include m.tablet{
+        width: 400px;
+        height: 400px;
+    }
+    @include m.desktop{
+        width: 400px;
+        height:400px;
+    }
+  }
+
+  &__p{
+      font-size: 2rem;
+      color: v.$blanco;
+
+      @include m.desktop{
+        font-size: 3rem;
+        color: v.$blanco;
+    }
+
+      span{
+        color: v.$principal
+      }
+  }
+
+  &__boton{
+    background-color: v.$principal;
+    font-size: 4rem;
+    width: 10rem;
+    height: 5rem;
+  }
+}
+
+
+

@@ -1,0 +1,29 @@
+
+@use "variables" as v;
+@use "mixin" as m;
+.people{
+    display:grid;
+    justify-content: center;
+    gap: 2rem;
+    background-color: v.$principal;
+    @include m.desktop{
+        @include m.grid(3,2fr)
+    }
+    @include m.contenedor
+}
+
+.containerpeople{
+    background-color: v.$principal;
+    padding-top: 3rem;
+}
+
+.menu{
+    display: flex;
+    margin: 0 auto;
+    background-color: v.$gris_oscuro;
+    font-size: 2rem;
+   
+    height: 4rem;
+    width: 8rem;
+
+}

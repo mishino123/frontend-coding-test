@@ -1,0 +1,63 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+.taskContainer{
+  
+    background-color: v.$blanco;
+    width: 100%;
+    font-size: 3rem;
+    padding: 0px auto;
+    border-radius: 20px;
+  padding-top: 2rem;
+  margin: 1rem auto;
+    p{
+        color:v.$principal;
+        padding:10px 10px;
+        font-weight: 700;
+        margin:0;
+
+        span{
+            color:v.$negro;
+            font-weight: 10;
+            line-height: 0.8;
+
+            @include m.desktop{
+                color:v.$negro;
+                font-weight: 100;
+                line-height: 0.8;
+            }
+        }
+    }
+   
+}
+
+.header{
+    display:flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.info{
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.boton2{
+
+    background-color: rgb(93, 151, 93);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.boton{
+
+    background-color: #005485 ;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 800;
+    color:aliceblue;
+}

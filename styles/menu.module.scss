@@ -1,0 +1,34 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+
+.menu {
+    background-color: v.$negro;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    justify-content: space-around;
+  }
+  
+  .menu > div {
+    display: flex;
+  }
+
+  .menu h1{
+    color:v.$blanco;
+    text-align: center;
+     font-size: 4rem;
+
+  }
+  
+  .link {
+    display: block;
+    padding: 40px 20rem;
+    text-align: center;
+    color:v.$blanco;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  
+ 

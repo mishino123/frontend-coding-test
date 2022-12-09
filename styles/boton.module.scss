@@ -1,0 +1,12 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+
+.boton{
+
+    background-color: v.$boton;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 800;
+}

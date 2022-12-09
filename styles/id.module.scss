@@ -1,0 +1,14 @@
+
+@use "variables" as v;
+@use "mixin" as m;
+.containerDetail{
+    display:grid;
+    justify-content: center;
+    gap: 1rem;
+    background-color: v.$principal;
+    max-width: 90%;
+    @include m.desktop{
+        @include m.grid(2,1fr)
+    }
+    @include m.contenedor
+}
